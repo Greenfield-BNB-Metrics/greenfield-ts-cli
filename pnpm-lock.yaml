@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@bnb-chain/greenfield-chain-sdk':
     specifier: ^0.2.0
@@ -37,8 +41,8 @@ dependencies:
 
 devDependencies:
   '@oclif/test':
-    specifier: ^2.3.21
-    version: 2.3.21(@types/node@16.18.34)(typescript@4.9.5)
+    specifier: ^2.3.25
+    version: 2.3.25(@types/node@16.18.34)(typescript@4.9.5)
   '@types/chai':
     specifier: ^4
     version: 4.3.5
@@ -925,6 +929,46 @@ packages:
       supports-color: 8.1.1
       tslib: 2.5.2
 
+  /@oclif/core@2.8.10(@types/node@16.18.34)(typescript@4.9.5):
+    resolution: {integrity: sha512-coRn9vYDEnoE8Vg20aavts9+Bt5QrHhbdh0cDkImopV0MgT8i/VmgL04D33+qoHQH20XzBOMqrjk+bqQzqyaHg==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@types/cli-progress': 3.11.0
+      ansi-escapes: 4.3.2
+      ansi-styles: 4.3.0
+      cardinal: 2.1.1
+      chalk: 4.1.2
+      clean-stack: 3.0.1
+      cli-progress: 3.12.0
+      debug: 4.3.4(supports-color@8.1.1)
+      ejs: 3.1.9
+      fs-extra: 9.1.0
+      get-package-type: 0.1.0
+      globby: 11.1.0
+      hyperlinker: 1.0.0
+      indent-string: 4.0.0
+      is-wsl: 2.2.0
+      js-yaml: 3.14.1
+      natural-orderby: 2.0.3
+      object-treeify: 1.1.33
+      password-prompt: 1.1.2
+      semver: 7.5.1
+      string-width: 4.2.3
+      strip-ansi: 6.0.1
+      supports-color: 8.1.1
+      supports-hyperlinks: 2.3.0
+      ts-node: 10.9.1(@types/node@16.18.34)(typescript@4.9.5)
+      tslib: 2.5.2
+      widest-line: 3.1.0
+      wordwrap: 1.0.0
+      wrap-ansi: 7.0.0
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - typescript
+    dev: true
+
   /@oclif/core@2.8.5(@types/node@16.18.34)(typescript@4.9.5):
     resolution: {integrity: sha512-316DLfrHQDYmWDriI4Woxk9y1wVUrPN1sZdbQLHdOdlTA9v/twe7TdHpWOriEypfl6C85NWEJKc1870yuLtjrQ==}
     engines: {node: '>=14.0.0'}
@@ -980,7 +1024,7 @@ packages:
     engines: {node: '>=12.0.0'}
     dependencies:
       '@oclif/color': 1.0.5
-      '@oclif/core': 2.8.5(@types/node@16.18.34)(typescript@4.9.5)
+      '@oclif/core': 2.8.10(@types/node@16.18.34)(typescript@4.9.5)
       fast-levenshtein: 3.0.0
     transitivePeerDependencies:
       - '@swc/core'
@@ -1016,7 +1060,7 @@ packages:
     resolution: {integrity: sha512-rfDNvplwgiwV+QSV4JU96ypmWgNJ6Hk5FEAEAKzqF0v0J8AHwZGpwwYO/MCZSkbc7bfYpkqLx/sxjpMO6j6PmQ==}
     engines: {node: '>=12.0.0'}
     dependencies:
-      '@oclif/core': 2.8.5(@types/node@16.18.34)(typescript@4.9.5)
+      '@oclif/core': 2.8.10(@types/node@16.18.34)(typescript@4.9.5)
       chalk: 4.1.2
       debug: 4.3.4(supports-color@8.1.1)
       fs-extra: 9.1.0
@@ -1031,12 +1075,12 @@ packages:
       - typescript
     dev: true
 
-  /@oclif/test@2.3.21(@types/node@16.18.34)(typescript@4.9.5):
-    resolution: {integrity: sha512-RaFNf3/PMwBLrL9yu8aFsONsUSpyI16AGC6HiAabDyu534Rh+jBtqy/dPZ53/SOCBOholhZmVs7jT0UE5Utwew==}
+  /@oclif/test@2.3.25(@types/node@16.18.34)(typescript@4.9.5):
+    resolution: {integrity: sha512-khOAiJc5/XEWkK0Lnueu+XB9uMaO2sDhDXwIZ80Ik0oUhsqujQixQbfOTDM8J9uc/uOuUPA9u5jmXOOSMxV7tg==}
     engines: {node: '>=12.0.0'}
     dependencies:
-      '@oclif/core': 2.8.5(@types/node@16.18.34)(typescript@4.9.5)
-      fancy-test: 2.0.25
+      '@oclif/core': 2.8.10(@types/node@16.18.34)(typescript@4.9.5)
+      fancy-test: 2.0.27
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -2928,8 +2972,8 @@ packages:
       tmp: 0.0.33
     dev: true
 
-  /fancy-test@2.0.25:
-    resolution: {integrity: sha512-4OKW+SC62aP3Y19YlCWxjKJD0iW4kjLqUvdd9OaW1lM7Co/FX3PTi2NHguzsj2vmPs/6mMITKu0saYAr2uZA4g==}
+  /fancy-test@2.0.27:
+    resolution: {integrity: sha512-NUhkIpeHc4ebvkGLhQmlwpd9hd/ytOXTEmX2dFJ0e5VL61Ds7/RUHUmdSRY27VWil+uAuWSU8q6mUymrkxHC8Q==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@types/chai': 4.3.5
